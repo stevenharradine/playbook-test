@@ -1,0 +1,15 @@
+---
+- connection: local
+  hosts: localhost
+  roles:
+    - role: telusdigital.ssl-certificate
+    - role: telusdigital.haproxy
+    - role: telusdigital.nginx
+  vars:
+    ssl_certificate_self_signed: "{% if environment_tier not in ['production'] %}true{% else %}false{% endif %}"
+    ssl_certificate_combined: yes
+    haproxy_ssl_certificate_path: /data/www/ssl.combined
+    haproxy_ssl_enabled: yes
+    haproxy_ssl_redirect_http_to_https: yes
+    nginx_ssl_enforced: yes
+    nginx_ssl_enabled: yes

@@ -1,0 +1,4 @@
+---
+- src: telusdigital.ssl-certificate
+- src: telusdigital.haproxy
+- src: telusdigital.nginx

@@ -1,0 +1,3 @@
+[all:vars]
+project=test
+environment_tier=staging

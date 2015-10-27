@@ -1,0 +1,14 @@
+---
+#slack_token: 
+
+#fluentd_config_name: "{{ project }}"
+#fluentd_elasticsearch_user: "{{ project }}"
+#fluentd_elasticsearch_password:
+
+#newrelic_environment:
+#  NR_INSTALL_SILENT: "yes"
+#  NR_INSTALL_KEY:
+
+#ssl_certificate_public_contents: |
+
+#ssl_certificate_private_contents: |
